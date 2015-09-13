@@ -13,10 +13,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    bplus.cpp
+        mainwindow.cpp
 
 HEADERS  += mainwindow.h \
-    bplus.h
+    btree.h
 
 FORMS    += mainwindow.ui

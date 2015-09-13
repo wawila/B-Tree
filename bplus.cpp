@@ -179,6 +179,22 @@ void BPlus::insert(int a)
         x->n++;
 }
 
+void BPlus::play()
+{
+    int i, n, t;
+        cout<<"enter the no of elements to be inserted\n";
+        cin>>n;
+        for(i = 0; i < n; i++)
+        {
+            cout<<"enter the element\n";
+            cin>>t;
+            insert(t);
+        }
+        cout<<"traversal of constructed tree\n";
+        traverse(root);
+        getch();
+}
+
 BPlus::~BPlus()
 {
 

@@ -4,6 +4,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<iostream>
+
 using namespace std;
 
 struct BplusNode
@@ -12,16 +13,18 @@ struct BplusNode
     BplusNode **child_ptr;
     bool leaf;
     int n;
-}*root = NULL, *np = NULL, *x = NULL;
+};
 
 class BPlus
 {
 public:
+    BplusNode *root = NULL, *np = NULL, *x = NULL;
     BplusNode * init();
     void traverse(BplusNode *p);
     void sort(int *p, int n);
     int split_child(BplusNode *x, int i);
     void insert(int a);
+    void play();
     BPlus();
     ~BPlus();
 };
