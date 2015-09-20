@@ -13,7 +13,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    btree.cpp
 
 HEADERS  += mainwindow.h \
     btree.h
